@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Netflix by Rohit – Stream movies, TV shows, and originals. Unlimited entertainment at your fingertips." />
+  <title>Netflix by Rohit – Watch Movies & TV Shows Online</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><text y='14' font-size='14'>🎬</text></svg>" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <a href="#home" class="navbar__logo">Netflix <span class="navbar__logo-sub">by Rohit</span></a>
+
+    <!-- Hidden checkbox for mobile toggle -->
+    <input type="checkbox" id="menu-toggle" />
+
+    <label for="menu-toggle" class="navbar__hamburger" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <ul class="navbar__menu">
+      <li><a href="#home" class="navbar__menu-item navbar__menu-item--active">Home</a></li>
+      <li><a href="#tv-shows" class="navbar__menu-item">TV Shows</a></li>
+      <li><a href="#movies" class="navbar__menu-item">Movies</a></li>
+      <li><a href="#new-popular" class="navbar__menu-item">New &amp; Popular</a></li>
+      <li><a href="#my-list" class="navbar__menu-item">My List</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== HERO BANNER ===== -->
+  <section class="hero" id="home" style="background-image: url('images/hero_banner.png');">
+    <div class="hero__overlay"></div>
+    <div class="hero__overlay-side"></div>
+
+    <div class="hero__content">
+      <div class="hero__badge">
+        <span class="hero__badge-dot"></span>
+        Netflix Original
+      </div>
+
+      <h1 class="hero__title">Nebula's <span>Edge</span></h1>
+
+      <div class="hero__meta">
+        <span class="hero__meta-rating">98% Match</span>
+        <span>2024</span>
+        <span class="hero__meta-tag">TV-MA</span>
+        <span>2h 18m</span>
+        <span class="hero__meta-tag">4K</span>
+      </div>
+
+      <p class="hero__description">
+        In a fractured galaxy, a rogue pilot discovers a weapon that could unite — or destroy — every 
+        civilization. With enemies closing in, she must choose between power and redemption in this 
+        breathtaking sci-fi epic.
+      </p>
+
+      <div class="hero__buttons">
+        <button class="btn btn--play" type="button">
+          <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          Play
+        </button>
+        <button class="btn btn--info" type="button">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><line x1="12" y1="8" x2="12" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="16" r="1" fill="currentColor"/></svg>
+          More Info
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTENT ROWS ===== -->
+  <main class="content">
+
+    <!-- Row 1: Trending Now -->
+    <section class="row">
+      <div class="row__header">
+        <h2 class="row__title">Trending Now</h2>
+        <a href="#" class="row__see-all">See All</a>
+      </div>
+      <div class="card-grid">
+        <div class="card">
+          <img src="images/poster_1.png" alt="Night Blind" class="card__image" loading="lazy" />
+          <div class="card__overlay">
+            <span class="card__overlay-title">Night Blind</span>
+            <span class="card__overlay-meta"><span class="card__overlay-match">95% Match</span> • 2024</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/poster_2.png" alt="Chronicles of Aethel" class="card__image" loading="lazy" />
+          <div class="card__overlay">
+            <span class="card__overlay-title">Chronicles of Aethel</span>
+            <span class="card__overlay-meta"><span class="card__overlay-match">92% Match</span> • 2024</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/poster_3.png" alt="Blackwood Manor" class="card__image" loading="lazy" />
+          <div class="card__overlay">
+            <span class="card__overlay-title">Blackwood Manor</span>
+            <span class="card__overlay-meta"><span class="card__overlay-match">89% Match</span> • 2024</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/poster_4.png" alt="Celestial Bounds" class="card__image" loading="lazy" />
+          <div class="card__overlay">
+            <span class="card__overlay-title">Celestial Bounds</span>
+            <span class="card__overlay-meta"><span class="card__overlay-match">97% Match</span> • 2024</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/poster_5.png" alt="Night Breach" class="card__image" loading="lazy" />
+          <div class="card__overlay">
+            <span class="card__overlay-title">Night Breach</span>
+            <span class="card__overlay-meta"><span class="card__overlay-match">91% Match</span> • 2024</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/poster_1.png" alt="Night Blind II" class="card__image" loading="lazy" />
+          <div class="card__overlay">
+            <span class="card__overlay-title">Night Blind II</span>
+            <span class="card__overlay-meta"><span class="card__overlay-match">88% Match</span> • 2025</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Row 2: Bollywood Blockbusters -->
+    <section class="row">
+      <div class="row__header">
+        <h2 class="row__title">🇮🇳 Bollywood Blockbusters</h2>
+        <a href="#" class="row__see-all">See All</a>
+      </div>
+      <div class="card-grid">
+        <div class="card">
+          <img src="images/poster_5.png" alt="Agni" class="card__image" loading="lazy" />
+          <div class="card__overlay">
+            <span class="card__overlay-title">Agni</span>
+            <span class="card__overlay-meta"><span class="card__overlay-match">96% Match</span> • Action</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/poster_2.png" alt="Dil Ka Raasta" class="card__image" loading="lazy" />
+          <div class="card__overlay">
+            <span class="card__overlay-title">Dil Ka Raasta</span>
+            <span class="card__overlay-meta"><span class="card__overlay-match">93% Match</span> • Romance</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/poster_1.png" alt="Mumbai Noir" class="card__image" loading="lazy" />
+          <div class="card__overlay">
+            <span class="card__overlay-title">Mumbai Noir</span>
+            <span class="card__overlay-meta"><span class="card__overlay-match">94% Match</span> • Thriller</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/poster_3.png" alt="Raaz: The Secret" class="card__image" loading="lazy" />
+          <div class="card__overlay">
+            <span class="card__overlay-title">Raaz: The Secret</span>
+            <span class="card__overlay-meta"><span class="card__overlay-match">87% Match</span> • Horror</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/poster_4.png" alt="Samrat" class="card__image" loading="lazy" />
+          <div class="card__overlay">
+            <span class="card__overlay-title">Samrat</span>
+            <span class="card__overlay-meta"><span class="card__overlay-match">95% Match</span> • Historical</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/poster_2.png" alt="Zindagi Ke Rang" class="card__image" loading="lazy" />
+          <div class="card__overlay">
+            <span class="card__overlay-title">Zindagi Ke Rang</span>
+            <span class="card__overlay-meta"><span class="card__overlay-match">90% Match</span> • Comedy</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Row 3: Top 10 in India Today -->
+    <section class="row row--top10">
+      <div class="row__header">
+        <h2 class="row__title">Top 10 in India Today</h2>
+        <a href="#" class="row__see-all">See All</a>
+      </div>
+      <div class="card-grid">
+        <div class="card">
+          <img src="images/poster_5.png" alt="Agni" class="card__image" loading="lazy" />
+          <span class="card__rank">1</span>
+          <div class="card__overlay">
+            <span class="card__overlay-title">Agni</span>
+            <span class="card__overlay-meta"><span class="card__overlay-match">96% Match</span> • Action</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/poster_4.png" alt="Celestial Bounds" class="card__image" loading="lazy" />
+          <span class="card__rank">2</span>
+          <div class="card__overlay">
+            <span class="card__overlay-title">Celestial Bounds</span>
+            <span class="card__overlay-meta"><span class="card__overlay-match">97% Match</span> • Sci-Fi</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/poster_1.png" alt="Mumbai Noir" class="card__image" loading="lazy" />
+          <span class="card__rank">3</span>
+          <div class="card__overlay">
+            <span class="card__overlay-title">Mumbai Noir</span>
+            <span class="card__overlay-meta"><span class="card__overlay-match">94% Match</span> • Thriller</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/poster_3.png" alt="Blackwood Manor" class="card__image" loading="lazy" />
+          <span class="card__rank">4</span>
+          <div class="card__overlay">
+            <span class="card__overlay-title">Blackwood Manor</span>
+            <span class="card__overlay-meta"><span class="card__overlay-match">89% Match</span> • Horror</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/poster_2.png" alt="Dil Ka Raasta" class="card__image" loading="lazy" />
+          <span class="card__rank">5</span>
+          <div class="card__overlay">
+            <span class="card__overlay-title">Dil Ka Raasta</span>
+            <span class="card__overlay-meta"><span class="card__overlay-match">93% Match</span> • Romance</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TV SHOWS SECTION ===== -->
+    <section class="section-divider" id="tv-shows">
+      <h2 class="section-divider__title">📺 TV Shows</h2>
+    </section>
+
+    <section class="row">
+      <div class="row__header">
+        <h2 class="row__title">Popular TV Shows</h2>
+        <a href="#" class="row__see-all">See All</a>
+      </div>
+      <div class="card-grid">
+        <div class="card">
+          <img src="images/poster_3.png" alt="Blackwood Manor: The Series" class="card__image" loading="lazy" />
+          <div class="card__overlay">
+            <span class="card__overlay-title">Blackwood Manor: The Series</span>
+            <span class="card__overlay-meta"><span class="card__overlay-match">89% Match</span> • 3 Seasons</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/poster_1.png" alt="Night Blind: Origins" class="card__image" loading="lazy" />
+          <div class="card__overlay">
+            <span class="card__overlay-title">Night Blind: Origins</span>
+            <span class="card__overlay-meta"><span class="card__overlay-match">94% Match</span> • 2 Seasons</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/poster_4.png" alt="Celestial Chronicles" class="card__image" loading="lazy" />
+          <div class="card__overlay">
+            <span class="card__overlay-title">Celestial Chronicles</span>
+            <span class="card__overlay-meta"><span class="card__overlay-match">96% Match</span> • 1 Season</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/poster_2.png" alt="Kingdoms of Aethel" class="card__image" loading="lazy" />
+          <div class="card__overlay">
+            <span class="card__overlay-title">Kingdoms of Aethel</span>
+            <span class="card__overlay-meta"><span class="card__overlay-match">91% Match</span> • 4 Seasons</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/poster_5.png" alt="Breach Protocol" class="card__image" loading="lazy" />
+          <div class="card__overlay">
+            <span class="card__overlay-title">Breach Protocol</span>
+            <span class="card__overlay-meta"><span class="card__overlay-match">88% Match</span> • 2 Seasons</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/poster_3.png" alt="Raaz Unveiled" class="card__image" loading="lazy" />
+          <div class="card__overlay">
+            <span class="card__overlay-title">Raaz Unveiled</span>
+            <span class="card__overlay-meta"><span class="card__overlay-match">85% Match</span> • 1 Season</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="row">
+      <div class="row__header">
+        <h2 class="row__title">Binge-Worthy Hindi Shows</h2>
+        <a href="#" class="row__see-all">See All</a>
+      </div>
+      <div class="card-grid">
+        <div class="card">
+          <img src="images/poster_5.png" alt="Agni: The Saga" class="card__image" loading="lazy" />
+          <div class="card__overlay">
+            <span class="card__overlay-title">Agni: The Saga</span>
+            <span class="card__overlay-meta"><span class="card__overlay-match">95% Match</span> • 3 Seasons</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/poster_1.png" alt="Kahaani" class="card__image" loading="lazy" />
+          <div class="card__overlay">
+            <span class="card__overlay-title">Kahaani</span>
+            <span class="card__overlay-meta"><span class="card__overlay-match">92% Match</span> • 2 Seasons</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/poster_4.png" alt="Dharti Ke Rakhwale" class="card__image" loading="lazy" />
+          <div class="card__overlay">
+            <span class="card__overlay-title">Dharti Ke Rakhwale</span>
+            <span class="card__overlay-meta"><span class="card__overlay-match">87% Match</span> • 1 Season</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/poster_2.png" alt="Sapne" class="card__image" loading="lazy" />
+          <div class="card__overlay">
+            <span class="card__overlay-title">Sapne</span>
+            <span class="card__overlay-meta"><span class="card__overlay-match">91% Match</span> • 2 Seasons</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/poster_3.png" alt="Bhoot Bangla" class="card__image" loading="lazy" />
+          <div class="card__overlay">
+            <span class="card__overlay-title">Bhoot Bangla</span>
+            <span class="card__overlay-meta"><span class="card__overlay-match">86% Match</span> • 1 Season</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/poster_5.png" alt="Tandav" class="card__image" loading="lazy" />
+          <div class="card__overlay">
+            <span class="card__overlay-title">Tandav</span>
+            <span class="card__overlay-meta"><span class="card__overlay-match">93% Match</span> • 3 Seasons</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== MOVIES SECTION ===== -->
+    <section class="section-divider" id="movies">
+      <h2 class="section-divider__title">🎬 Movies</h2>
+    </section>
+
+    <section class="row">
+      <div class="row__header">
+        <h2 class="row__title">Award-Winning Movies</h2>
+        <a href="#" class="row__see-all">See All</a>
+      </div>
+      <div class="card-grid">
+        <div class="card">
+          <img src="images/poster_2.png" alt="Chronicles of Aethel" class="card__image" loading="lazy" />
+          <div class="card__overlay">
+            <span class="card__overlay-title">Chronicles of Aethel</span>
+            <span class="card__overlay-meta"><span class="card__overlay-match">92% Match</span> • Fantasy</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/poster_4.png" alt="Samrat" class="card__image" loading="lazy" />
+          <div class="card__overlay">
+            <span class="card__overlay-title">Samrat</span>
+            <span class="card__overlay-meta"><span class="card__overlay-match">95% Match</span> • Historical</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/poster_1.png" alt="Night Blind" class="card__image" loading="lazy" />
+          <div class="card__overlay">
+            <span class="card__overlay-title">Night Blind</span>
+            <span class="card__overlay-meta"><span class="card__overlay-match">95% Match</span> • Thriller</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/poster_5.png" alt="Agni" class="card__image" loading="lazy" />
+          <div class="card__overlay">
+            <span class="card__overlay-title">Agni</span>
+            <span class="card__overlay-meta"><span class="card__overlay-match">96% Match</span> • Action</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/poster_3.png" alt="Blackwood Manor" class="card__image" loading="lazy" />
+          <div class="card__overlay">
+            <span class="card__overlay-title">Blackwood Manor</span>
+            <span class="card__overlay-meta"><span class="card__overlay-match">89% Match</span> • Horror</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/poster_2.png" alt="Dil Ka Raasta" class="card__image" loading="lazy" />
+          <div class="card__overlay">
+            <span class="card__overlay-title">Dil Ka Raasta</span>
+            <span class="card__overlay-meta"><span class="card__overlay-match">93% Match</span> • Romance</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="row">
+      <div class="row__header">
+        <h2 class="row__title">Bollywood Hits</h2>
+        <a href="#" class="row__see-all">See All</a>
+      </div>
+      <div class="card-grid">
+        <div class="card">
+          <img src="images/poster_5.png" alt="Agni: Part II" class="card__image" loading="lazy" />
+          <div class="card__overlay">
+            <span class="card__overlay-title">Agni: Part II</span>
+            <span class="card__overlay-meta"><span class="card__overlay-match">94% Match</span> • Action</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/poster_2.png" alt="Zindagi Ke Rang" class="card__image" loading="lazy" />
+          <div class="card__overlay">
+            <span class="card__overlay-title">Zindagi Ke Rang</span>
+            <span class="card__overlay-meta"><span class="card__overlay-match">90% Match</span> • Comedy</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/poster_1.png" alt="Mumbai Noir" class="card__image" loading="lazy" />
+          <div class="card__overlay">
+            <span class="card__overlay-title">Mumbai Noir</span>
+            <span class="card__overlay-meta"><span class="card__overlay-match">94% Match</span> • Thriller</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/poster_4.png" alt="Samrat: Rise of the King" class="card__image" loading="lazy" />
+          <div class="card__overlay">
+            <span class="card__overlay-title">Samrat: Rise of the King</span>
+            <span class="card__overlay-meta"><span class="card__overlay-match">96% Match</span> • Historical</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/poster_3.png" alt="Raaz: The Secret" class="card__image" loading="lazy" />
+          <div class="card__overlay">
+            <span class="card__overlay-title">Raaz: The Secret</span>
+            <span class="card__overlay-meta"><span class="card__overlay-match">87% Match</span> • Horror</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/poster_2.png" alt="Ishq Wala Love" class="card__image" loading="lazy" />
+          <div class="card__overlay">
+            <span class="card__overlay-title">Ishq Wala Love</span>
+            <span class="card__overlay-meta"><span class="card__overlay-match">89% Match</span> • Romance</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== NEW & POPULAR SECTION ===== -->
+    <section class="section-divider" id="new-popular">
+      <h2 class="section-divider__title">🔥 New & Popular</h2>
+    </section>
+
+    <section class="row">
+      <div class="row__header">
+        <h2 class="row__title">New Releases This Week</h2>
+        <a href="#" class="row__see-all">See All</a>
+      </div>
+      <div class="card-grid">
+        <div class="card">
+          <img src="images/poster_4.png" alt="Celestial Bounds" class="card__image" loading="lazy" />
+          <div class="card__overlay">
+            <span class="card__overlay-title">Celestial Bounds</span>
+            <span class="card__overlay-meta"><span class="card__overlay-match">97% Match</span> • NEW</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/poster_5.png" alt="Agni Returns" class="card__image" loading="lazy" />
+          <div class="card__overlay">
+            <span class="card__overlay-title">Agni Returns</span>
+            <span class="card__overlay-meta"><span class="card__overlay-match">95% Match</span> • NEW</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/poster_1.png" alt="Night Blind III" class="card__image" loading="lazy" />
+          <div class="card__overlay">
+            <span class="card__overlay-title">Night Blind III</span>
+            <span class="card__overlay-meta"><span class="card__overlay-match">91% Match</span> • NEW</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/poster_3.png" alt="Raaz 2: Rebirth" class="card__image" loading="lazy" />
+          <div class="card__overlay">
+            <span class="card__overlay-title">Raaz 2: Rebirth</span>
+            <span class="card__overlay-meta"><span class="card__overlay-match">88% Match</span> • NEW</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/poster_2.png" alt="The Golden Kingdom" class="card__image" loading="lazy" />
+          <div class="card__overlay">
+            <span class="card__overlay-title">The Golden Kingdom</span>
+            <span class="card__overlay-meta"><span class="card__overlay-match">90% Match</span> • NEW</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/poster_4.png" alt="Samrat Returns" class="card__image" loading="lazy" />
+          <div class="card__overlay">
+            <span class="card__overlay-title">Samrat Returns</span>
+            <span class="card__overlay-meta"><span class="card__overlay-match">94% Match</span> • NEW</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="row">
+      <div class="row__header">
+        <h2 class="row__title">Most Popular Right Now</h2>
+        <a href="#" class="row__see-all">See All</a>
+      </div>
+      <div class="card-grid">
+        <div class="card">
+          <img src="images/poster_5.png" alt="Night Breach" class="card__image" loading="lazy" />
+          <div class="card__overlay">
+            <span class="card__overlay-title">Night Breach</span>
+            <span class="card__overlay-meta"><span class="card__overlay-match">91% Match</span> • #1 Today</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/poster_1.png" alt="Mumbai Noir" class="card__image" loading="lazy" />
+          <div class="card__overlay">
+            <span class="card__overlay-title">Mumbai Noir</span>
+            <span class="card__overlay-meta"><span class="card__overlay-match">94% Match</span> • #2 Today</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/poster_2.png" alt="Dil Ka Raasta" class="card__image" loading="lazy" />
+          <div class="card__overlay">
+            <span class="card__overlay-title">Dil Ka Raasta</span>
+            <span class="card__overlay-meta"><span class="card__overlay-match">93% Match</span> • #3 Today</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/poster_4.png" alt="Celestial Bounds" class="card__image" loading="lazy" />
+          <div class="card__overlay">
+            <span class="card__overlay-title">Celestial Bounds</span>
+            <span class="card__overlay-meta"><span class="card__overlay-match">97% Match</span> • #4 Today</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/poster_3.png" alt="Bhoot Bangla" class="card__image" loading="lazy" />
+          <div class="card__overlay">
+            <span class="card__overlay-title">Bhoot Bangla</span>
+            <span class="card__overlay-meta"><span class="card__overlay-match">86% Match</span> • #5 Today</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/poster_5.png" alt="Agni" class="card__image" loading="lazy" />
+          <div class="card__overlay">
+            <span class="card__overlay-title">Agni</span>
+            <span class="card__overlay-meta"><span class="card__overlay-match">96% Match</span> • #6 Today</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== MY LIST SECTION ===== -->
+    <section class="section-divider" id="my-list">
+      <h2 class="section-divider__title">💾 My List</h2>
+    </section>
+
+    <section class="row">
+      <div class="row__header">
+        <h2 class="row__title">Your Saved Titles</h2>
+        <a href="#" class="row__see-all">See All</a>
+      </div>
+      <div class="card-grid">
+        <div class="card">
+          <img src="images/poster_4.png" alt="Celestial Bounds" class="card__image" loading="lazy" />
+          <div class="card__overlay">
+            <span class="card__overlay-title">Celestial Bounds</span>
+            <span class="card__overlay-meta"><span class="card__overlay-match">97% Match</span> • Sci-Fi</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/poster_5.png" alt="Agni" class="card__image" loading="lazy" />
+          <div class="card__overlay">
+            <span class="card__overlay-title">Agni</span>
+            <span class="card__overlay-meta"><span class="card__overlay-match">96% Match</span> • Action</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/poster_1.png" alt="Night Blind" class="card__image" loading="lazy" />
+          <div class="card__overlay">
+            <span class="card__overlay-title">Night Blind</span>
+            <span class="card__overlay-meta"><span class="card__overlay-match">95% Match</span> • Thriller</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/poster_2.png" alt="Dil Ka Raasta" class="card__image" loading="lazy" />
+          <div class="card__overlay">
+            <span class="card__overlay-title">Dil Ka Raasta</span>
+            <span class="card__overlay-meta"><span class="card__overlay-match">93% Match</span> • Romance</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/poster_3.png" alt="Blackwood Manor" class="card__image" loading="lazy" />
+          <div class="card__overlay">
+            <span class="card__overlay-title">Blackwood Manor</span>
+            <span class="card__overlay-meta"><span class="card__overlay-match">89% Match</span> • Horror</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/poster_2.png" alt="Zindagi Ke Rang" class="card__image" loading="lazy" />
+          <div class="card__overlay">
+            <span class="card__overlay-title">Zindagi Ke Rang</span>
+            <span class="card__overlay-meta"><span class="card__overlay-match">90% Match</span> • Comedy</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Row: Netflix Originals -->
+    <section class="row">
+      <div class="row__header">
+        <h2 class="row__title">Netflix Originals</h2>
+        <a href="#" class="row__see-all">See All</a>
+      </div>
+      <div class="card-grid">
+        <div class="card">
+          <img src="images/poster_3.png" alt="Blackwood Manor" class="card__image" loading="lazy" />
+          <div class="card__overlay">
+            <span class="card__overlay-title">Blackwood Manor</span>
+            <span class="card__overlay-meta"><span class="card__overlay-match">89% Match</span> • Horror</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/poster_5.png" alt="Night Breach" class="card__image" loading="lazy" />
+          <div class="card__overlay">
+            <span class="card__overlay-title">Night Breach</span>
+            <span class="card__overlay-meta"><span class="card__overlay-match">91% Match</span> • Action</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/poster_2.png" alt="Chronicles of Aethel" class="card__image" loading="lazy" />
+          <div class="card__overlay">
+            <span class="card__overlay-title">Chronicles of Aethel</span>
+            <span class="card__overlay-meta"><span class="card__overlay-match">92% Match</span> • Fantasy</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/poster_4.png" alt="Celestial Bounds" class="card__image" loading="lazy" />
+          <div class="card__overlay">
+            <span class="card__overlay-title">Celestial Bounds</span>
+            <span class="card__overlay-meta"><span class="card__overlay-match">97% Match</span> • Sci-Fi</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/poster_1.png" alt="Night Blind" class="card__image" loading="lazy" />
+          <div class="card__overlay">
+            <span class="card__overlay-title">Night Blind</span>
+            <span class="card__overlay-meta"><span class="card__overlay-match">95% Match</span> • Thriller</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/poster_3.png" alt="Blackwood Rising" class="card__image" loading="lazy" />
+          <div class="card__overlay">
+            <span class="card__overlay-title">Blackwood Rising</span>
+            <span class="card__overlay-meta"><span class="card__overlay-match">86% Match</span> • Horror</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer__grid">
+      <div>
+        <h4 class="footer__col-title">Navigation</h4>
+        <a href="#home" class="footer__link">Home</a>
+        <a href="#tv-shows" class="footer__link">TV Shows</a>
+        <a href="#movies" class="footer__link">Movies</a>
+        <a href="#new-popular" class="footer__link">New & Popular</a>
+        <a href="#my-list" class="footer__link">My List</a>
+      </div>
+      <div>
+        <h4 class="footer__col-title">Help</h4>
+        <a href="#" class="footer__link">FAQ</a>
+        <a href="#" class="footer__link">Help Center</a>
+        <a href="#" class="footer__link">Account</a>
+        <a href="#" class="footer__link">Media Center</a>
+      </div>
+      <div>
+        <h4 class="footer__col-title">Legal</h4>
+        <a href="#" class="footer__link">Privacy</a>
+        <a href="#" class="footer__link">Cookie Preferences</a>
+        <a href="#" class="footer__link">Terms of Use</a>
+        <a href="#" class="footer__link">Corporate Information</a>
+      </div>
+      <div>
+        <h4 class="footer__col-title">Connect</h4>
+        <a href="#" class="footer__link">Contact Us</a>
+        <a href="#" class="footer__link">Speed Test</a>
+        <a href="#" class="footer__link">Legal Notices</a>
+        <a href="#" class="footer__link">Only on Netflix</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copyright">© 2024 <span>Netflix by Rohit</span>. For educational purposes only.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
