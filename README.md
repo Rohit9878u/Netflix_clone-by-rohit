@@ -113,7 +113,7 @@ It is a UI clone and is **not affiliated with Netflix**.
 
 **Rohit Kumar**
 
-* GitHub: https://github.com/Rohit9878u
+* project link=netflix-clone-by-rohit.vercel.app
 
 ---
 
